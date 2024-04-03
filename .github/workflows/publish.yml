@@ -19,10 +19,11 @@ jobs:
       - name: Build package
         run: |
           gbp buildpackage --git-pristine-tar --git-ignore-branch
-          mv ../*.deb .
+          mkdir target
+          mv ../*.deb target
       - name: Test package
         run: |
-          sudo apt install -y ./*.deb
+          sudo apt install -y target/*.deb
           which openvpn-ldap-auth
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
