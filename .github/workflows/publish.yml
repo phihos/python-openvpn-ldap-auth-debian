@@ -15,7 +15,8 @@ jobs:
           fetch-tags: true
       - name: Install dependencies
         run: |
-          sudo apt install python3-pip git-buildpackage debmake debhelper-compat dh-python python3-all
+          sudo apt install python3-pip git-buildpackage debmake debhelper-compat dh-python pybuild-plugin-pyproject python3-all
+          sudo pip3 install --upgrade poetry
       - name: Build package
         run: |
           gbp buildpackage --git-pristine-tar --git-ignore-branch
