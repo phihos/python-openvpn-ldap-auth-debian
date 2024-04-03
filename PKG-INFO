@@ -1,27 +1,27 @@
 Metadata-Version: 2.1
 Name: openvpn-ldap-auth
-Version: 0.1.6
+Version: 0.1.7
 Summary: An auth verify script for OpenVPN to authenticate via LDAP.
 Home-page: https://github.com/phihos/python-openvpn-ldap-auth/
 License: MIT
 Keywords: OpenVPN,LDAP
 Author: Philipp Hossner
 Author-email: philipph@posteo.de
-Requires-Python: >=3.6,<4.0
+Requires-Python: >=3.8,<3.13
 Classifier: Development Status :: 4 - Beta
 Classifier: Environment :: Plugins
 Classifier: Intended Audience :: System Administrators
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: POSIX
 Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.10
-Classifier: Programming Language :: Python :: 3.6
-Classifier: Programming Language :: Python :: 3.7
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
 Classifier: Topic :: System :: Systems Administration :: Authentication/Directory :: LDAP
 Requires-Dist: Cerberus (>=1.3.2,<2.0.0)
-Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
 Requires-Dist: python-ldap (>=3.3.1,<4.0.0)
 Project-URL: Repository, https://github.com/phihos/python-openvpn-ldap-auth/
 Description-Content-Type: text/markdown
@@ -63,7 +63,7 @@ ldap:
   url: 'ldaps://first.ldap.tld:636/ ldaps://second.ldap.tld:636/'
   bind_dn: 'uid=readonly,dc=example,dc=org'
   password: 'somesecurepassword'
-  timeout: 5 # optional
+  timeout: 5 # (optional) wait this many seconds for connection and response
 authorization:
   base_dn: 'ou=people,dc=example,dc=org'
   search_filter: '(uid={})' # optional, {} will be replaced with the username

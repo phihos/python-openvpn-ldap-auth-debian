@@ -1,3 +1,0 @@
-[console_scripts]
-openvpn-ldap-auth = openvpn_ldap_auth.main:main
-
