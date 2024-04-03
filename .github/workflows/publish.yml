@@ -14,7 +14,7 @@ jobs:
         run: |
           sudo apt install python3-pip git-buildpackage debmake debhelper-compat dh-python python3-all
       - name: Build package
-        run: sudo gbp buildpackage --git-pristine-tar
+        run: gbp buildpackage --git-pristine-tar --git-ignore-branch
       - name: Test package
         run: |
           sudo apt install -y ../*.deb
