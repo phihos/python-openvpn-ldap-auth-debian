@@ -1,0 +1,16 @@
+Source: openvpn-ldap-auth
+Section: unknown
+Priority: optional
+Maintainer: Philipp Hossner <philipp.hossner@posteo.de>
+Build-Depends: debhelper-compat (= 12), dh-python, python3-all
+Standards-Version: 4.5.0
+Vcs-Git: https://github.com/phihos/python-openvpn-ldap-auth.git
+Vcs-Browser: https://github.com/phihos/python-openvpn-ldap-auth.git
+Homepage: https://github.com/phihos/python-openvpn-ldap-auth
+X-Python3-Version: >= 3.6
+
+Package: openvpn-ldap-auth
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: An auth verify script for OpenVPN to authenticate via LDAP.

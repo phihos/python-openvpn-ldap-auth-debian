@@ -1,0 +1,5 @@
+openvpn-ldap-auth (0.1.6-1) UNRELEASED; urgency=low
+
+  * Initial release.
+
+ -- Philipp Hossner <philipp.hossner@posteo.de>  Wed, 03 Apr 2024 10:37:21 +0000
