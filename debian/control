@@ -9,7 +9,7 @@ Vcs-Browser: https://github.com/phihos/python-openvpn-ldap-auth.git
 Homepage: https://github.com/phihos/python-openvpn-ldap-auth
 X-Python3-Version: >= 3.6
 
-Package: openvpn-ldap-auth
+Package: python3-openvpn-ldap-auth
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${python3:Depends}
