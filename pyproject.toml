@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "openvpn-ldap-auth"
-version = "0.1.7"
+version = "0.1.8"
 description = "An auth verify script for OpenVPN to authenticate via LDAP."
 authors = ["Philipp Hossner <philipph@posteo.de>"]
 license = 'MIT'
@@ -40,7 +40,7 @@ plotly = ">=4.14.3,<6.0.0"
 kaleido = "0.2.1"
 stdeb = "^0.10.0"
 tox = "^4.14.2"
-black = {version = "24.3.0", extras = ["d"]}
+black = {version = "24.4.2", extras = ["d"]}
 
 [tool.tox]
 legacy_tox_ini = """

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: openvpn-ldap-auth
-Version: 0.1.7
+Version: 0.1.8
 Summary: An auth verify script for OpenVPN to authenticate via LDAP.
 Home-page: https://github.com/phihos/python-openvpn-ldap-auth/
 License: MIT
